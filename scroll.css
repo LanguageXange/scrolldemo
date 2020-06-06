@@ -1,0 +1,98 @@
+html,
+body,
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: tomato;
+  scroll-snap-align: center;
+}
+h2 {
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#home {
+  background: url("./laptop.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+section#service {
+  background: url("./hello2.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#revealboxes {
+  /* border: 1px solid white; */
+  width: 450px;
+}
+
+.box1 {
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  font-size: 28px;
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.digit {
+  opacity: 0;
+  transform: translate(-550px, -50px);
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid white;
+}
+.digit.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.digit:nth-of-type(3n + 1) {
+  margin-left: 1rem;
+  background-color: lightcoral;
+}
+.digit:nth-of-type(3n + 2) {
+  margin-left: 5rem;
+  background-color: aquamarine;
+}
+.digit:nth-of-type(3n) {
+  margin-left: 10rem;
+  background-color: orange;
+}
+.digit:nth-of-type(3n + 4) {
+  margin-left: 15rem;
+  background-color: purple;
+}
+
+.panel.blue {
+  background: url("./laptop2.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.panel.purple {
+  background: url("./tech1.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.panel.orange {
+  background: url("./light.jpg") no-repeat fixed center;
+  background-size: cover;
+}
