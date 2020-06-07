@@ -21,7 +21,7 @@
     </section>
     <section id="service">
       <div id="revealboxes">
-        <div class="box1 digit"><p>FullStack</p></div>
+        <div class="box1 digit"><p></p></div>
         <div class="box1 digit"><p>Web Design</p></div>
         <div class="box1 digit"><p>Backend</p></div>
         <div class="box1 digit"><p>Frontend</p></div>
@@ -46,7 +46,7 @@
           triggerElement: revealboxes[i], // y value not modified, so we can use element as trigger as well
           offset: 30, // start a little later
           triggerHook: 0.9, //onLeave  ==0; onEnter =1
-          duration: 800,
+           // delete duration so it will stay
         })
           .setClassToggle(revealboxes[i], "visible") // add class toggle
           .addTo(controller);
