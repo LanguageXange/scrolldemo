@@ -1,4 +1,4 @@
-## View Live Demo at 
+## View Live Demo at https://languagexange.github.io/scrolldemo/
 -------------------
 - How to use ScrollMagic 
 - Parallax effect
